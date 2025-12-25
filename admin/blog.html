@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dashboard | TerraNerve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="TerraNerve" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+    <!-- Apple Icon -->
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+
+    <!-- Theme Config Js -->
+    <script
+      src="assets/js/theme-script.js"
+      type="819c1d516d35307901584c0b-text/javascript"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Tabler Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/tabler-icons/tabler-icons.min.css"
+    />
+
+    <!-- Simplebar CSS -->
+    <link rel="stylesheet" href="assets/plugins/simplebar/simplebar.min.css" />
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" id="app-style" />
+  </head>
+
+  <body>
+    <!-- Begin Wrapper -->
+    <div class="main-wrapper">
+      <!-- Topbar Start -->
+      <header class="navbar-header">
+        <div class="topbar-menu">
+          <div class="d-flex align-items-center gap-2">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+              <!-- Logo Normal -->
+              <span class="logo-light">
+                <span class="logo-lg"
+                  ><img src="assets/img/logo.png" alt="logo"
+                /></span>
+                <!-- <span class="logo-sm"><img src="assets/img/logo.png" alt="small logo"></span> -->
+              </span>
+            </a>
+
+            <!-- Sidebar Toggle Button -->
+            <button class="sidenav-toggle-btn btn border-0 p-0" id="toggle_btn">
+              <i class="ti ti-menu-4 fs-24"></i>
+            </button>
+
+            <!-- Sidebar Mobile Button -->
+            <a id="mobile_btn" class="mobile-btn" href="#sidebar">
+              <i class="ti ti-menu-deep fs-24"></i>
+            </a>
+          </div>
+
+          <div class="d-flex align-items-center gap-1">
+            <!-- Notification Dropdown -->
+            <div class="header-item"></div>
+
+            <!-- User Dropdown -->
+            <div
+              class="dropdown profile-dropdown d-flex align-items-center justify-content-center"
+            >
+              <a
+                class="topbar-link dropdown-toggle drop-arrow-none"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-offset="0,22"
+                aria-haspopup="false"
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/img/profiles/avatar-01.jpg"
+                  width="24"
+                  class="rounded-circle d-flex"
+                  alt="user-image"
+                />
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg p-3">
+                <div
+                  class="d-flex align-items-center justify-content-between bg-light rounded mb-3 p-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="assets/img/profiles/avatar-01.jpg"
+                      class="rounded-circle"
+                      width="42"
+                      height="42"
+                      alt=""
+                    />
+                    <div class="ms-2">
+                      <h5 class="mb-1 fs-14">Admin</h5>
+                      <span class="d-block fs-13">TerraNerve</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item-->
+                <a href="profile.html" class="dropdown-item">
+                  <i class="ti ti-user me-1 fs-17 align-middle"></i>
+                  <span class="align-middle">Profile Settings</span>
+                </a>
+                <!-- Item-->
+                <a href="./login/login.html" class="dropdown-item border-top">
+                  <i
+                    class="ti ti-logout me-1 fs-17 align-middle text-danger"
+                  ></i>
+                  <span class="align-middle text-danger">Sign Out</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Topbar End -->
+
+      <!-- Sidenav Menu Start -->
+      <div class="sidebar" id="sidebar">
+        <!-- Start Logo -->
+        <div class="sidebar-logo">
+          <!-- Logo Normal -->
+          <a href="index.html" class="logo logo-normal">
+            <img src="assets/img/logo.png" alt="Logo" style="width: 100%" />
+          </a>
+          <!-- Sidebar Menu Close -->
+          <button class="sidebar-close">
+            <i class="ti ti-x align-middle"></i>
+          </button>
+        </div>
+        <!-- End Logo -->
+
+        <!--- Sidenav Menu -->
+        <div class="sidebar-inner" data-simplebar>
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <!-- MAIN -->
+              <li class="menu-title"><span>Main</span></li>
+
+              <li>
+                <a href="index.html">
+                  <i class="ti ti-layout-grid-add"></i><span>Dashboard</span>
+                </a>
+              </li>
+
+              <!-- PRODUCT MANAGEMENT -->
+              <li class="menu-title"><span>Products</span></li>
+
+              <li>
+                <a href="products.html">
+                  <i class="ti ti-box"></i><span>All Products</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="add-product.html">
+                  <i class="ti ti-file-pencil"></i><span>Add Product</span>
+                </a>
+              </li>
+
+              <!-- TBlogs -->
+              <li class="menu-title" class="active"><span>Blogs</span></li>
+
+              <li>
+                <a href="blog.html" class="active">
+                  <i class="ti ti-users-group"></i><span>Blog List</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="add-blog.html">
+                  <i class="ti ti-file-pencil"></i><span>Add Blog</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="blog-category.html">
+                  <i class="ti ti-category"></i><span>Blog Category</span>
+                </a>
+              </li>
+
+              <!-- EXTRA PAGES -->
+              <li class="menu-title" class="action"><span>Pages</span></li>
+
+              <li>
+                <a href="profile.html">
+                  <i class="ti ti-id"></i><span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="./login/forget-password.html">
+                  <i class="ti ti-lock"></i><span>Forget Password</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Sidenav Menu End -->
+
+      <!-- ========================
+			Start Page Content
+		========================= -->
+
+      <div class="page-wrapper">
+        <!-- Start Content -->
+        <div class="content pb-0">
+          <!-- Page Header -->
+          <div
+            class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+          >
+            <div class="flex-grow-1">
+              <h4 class="mb-0">Blog List</h4>
+            </div>
+            <div class="text-end">
+              <ol class="breadcrumb m-0 py-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Blog List
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- End Page Header -->
+
+          <!-- start row -->
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card shadow-none w-100">
+                <div
+                  class="card-header d-flex align-items-center justify-content-between gap-3 flex-wrap"
+                >
+                  <h5 class="mb-0">Blogs</h5>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table m-0 table-nowrap bg-white border">
+                    <thead>
+                      <tr>
+                        <th>Blog</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <!-- Blog 1 -->
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="avatar avatar-rounded">
+                              <img
+                                src="./assets/img/images/blog-1rec.png"
+                                class="img-fluid"
+                                alt="How AI is Transforming Fleet Optimization"
+                              />
+                            </a>
+                            <div class="ms-2">
+                              <h6 class="fs-14 fw-medium mb-0">
+                                <a href="fleet-optimization.html"
+                                  >How AI is Transforming Fleet Optimization</a
+                                >
+                              </h6>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td>Fleet Management</td>
+
+                        <td>
+                          <span class="badge badge-soft-success"
+                            >Published</span
+                          >
+                        </td>
+
+                        <td>
+                          <button
+                            class="btn btn-sm btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#viewModal1"
+                          >
+                            View
+                          </button>
+                          <a
+                            href="edit-blog.html?id=1"
+                            class="btn btn-sm btn-outline-secondary"
+                            >Edit</a
+                          >
+                        </td>
+                      </tr>
+
+                      <!-- Blog 2 -->
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="avatar avatar-rounded">
+                              <img
+                                src="./assets/img/images/blog2.jpg"
+                                class="img-fluid"
+                                alt="The Power of IoT in Connected Mobility"
+                              />
+                            </a>
+                            <div class="ms-2">
+                              <h6 class="fs-14 fw-medium mb-0">
+                                <a href="IOT.html"
+                                  >The Power of IoT in Connected Mobility</a
+                                >
+                              </h6>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td>IoT Innovation</td>
+
+                        <td>
+                          <span class="badge badge-soft-success"
+                            >Published</span
+                          >
+                        </td>
+
+                        <td>
+                          <button
+                            class="btn btn-sm btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#viewModal2"
+                          >
+                            View
+                          </button>
+                          <a
+                            href="edit-blog.html?id=2"
+                            class="btn btn-sm btn-outline-secondary"
+                            >Edit</a
+                          >
+                        </td>
+                      </tr>
+
+                      <!-- Blog 3 -->
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="avatar avatar-rounded">
+                              <img
+                                src="./assets/img/images/blog-3.jpg"
+                                class="img-fluid"
+                                alt="Predictive Maintenance: The Future of Fleet Uptime"
+                              />
+                            </a>
+                            <div class="ms-2">
+                              <h6 class="fs-14 fw-medium mb-0">
+                                <a href="future-of-fleet.html"
+                                  >Predictive Maintenance: The Future of Fleet
+                                  Uptime</a
+                                >
+                              </h6>
+                            </div>
+                          </div>
+                        </td>
+
+                        <td>Predictive Analytics</td>
+
+                        <td>
+                          <span class="badge badge-soft-success"
+                            >Published</span
+                          >
+                        </td>
+
+                        <td>
+                          <button
+                            class="btn btn-sm btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#viewModal3"
+                          >
+                            View
+                          </button>
+                          <a
+                            href="edit-blog.html?id=3"
+                            class="btn btn-sm btn-outline-secondary"
+                            >Edit</a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Content -->
+
+        <!-- Start Footer -->
+        <footer class="footer text-center">
+          <p class="mb-0 text-dark">
+            Copyright &copy; TerraNerve | Designed by
+            <a href="#">Arizona Mediaz</a>
+          </p>
+        </footer>
+        <!-- End Footer -->
+      </div>
+
+      <!-- ========================
+			End Page Content
+		========================= -->
+    </div>
+    <!-- End Wrapper -->
+    <!-- Modal 2 -->
+    <div class="modal fade" id="viewModal2" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content p-4">
+          <h3 class="mb-3">The Power of IoT in Connected Mobility</h3>
+
+          <div class="blog-content">
+            <p>
+              The Internet of Things (IoT) has become a driving force behind the
+              evolution of connected mobility. By linking vehicles,
+              infrastructure, devices, and cloud platforms, IoT enables seamless
+              communication across transportation ecosystems.
+            </p>
+
+            <p>
+              IoT eliminates challenges like limited visibility, inefficient
+              asset usage, and fragmented operational data by consolidating
+              insights from telematics, GPS devices, and onboard systems.
+            </p>
+
+            <h4>The Power of IoT in Connected Mobility</h4>
+
+            <p>
+              IoT-powered telematics solutions capture real-time insights into
+              vehicle health, location, and performance. Predictive maintenance
+              becomes more accurate through sensor data.
+            </p>
+
+            <blockquote>
+              <p>
+                “IoT doesn't just connect devices — it connects decisions,
+                powering the future of smart mobility.”
+              </p>
+            </blockquote>
+
+            <p>
+              IoT improves safety, transparency, customer experience, and
+              operational efficiency through connected systems.
+            </p>
+
+            <ul>
+              <li>Real-time vehicle monitoring</li>
+              <li>Connected diagnostics & predictive maintenance</li>
+              <li>Enhanced passenger & user experience</li>
+              <li>Smarter route optimization</li>
+              <li>Lower emissions & fuel savings</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="viewModal1" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content p-4">
+          <h3 class="mb-3">How AI is Transforming Fleet Optimization</h3>
+
+          <div class="blog-content">
+            <p>
+              Artificial Intelligence (AI) is reshaping fleet management faster
+              than any previous technological shift. From predicting vehicle
+              failures to optimizing fuel consumption and improving driver
+              safety, AI systems are helping logistics companies reduce
+              operational costs while increasing efficiency.
+            </p>
+
+            <p>
+              Traditional fleet management models often struggle with
+              unpredictable challenges — traffic delays, unexpected breakdowns,
+              fluctuating fuel costs, and inefficient routing. AI-powered
+              systems tackle these problems by analyzing large data sets from
+              telematics devices, GPS, sensors, and historical trip records.
+            </p>
+
+            <h4>How AI Is Transforming Fleet Optimization</h4>
+
+            <p>
+              AI-driven predictive analytics can forecast when a vehicle is
+              likely to require maintenance long before mechanical issues become
+              serious. This minimizes downtime and extends asset lifespan.
+            </p>
+
+            <blockquote>
+              <p>
+                “AI isn’t just automating fleet management — it’s turning data
+                into a competitive advantage.”
+              </p>
+            </blockquote>
+
+            <p>
+              Driver behavior monitoring, real-time feedback, and data-driven
+              decisions help fleets operate more safely and efficiently.
+            </p>
+
+            <ul>
+              <li>Predictive maintenance to minimize downtime</li>
+              <li>Smart route optimization</li>
+              <li>Driver behavior analytics</li>
+              <li>Demand forecasting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="viewModal3" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content p-4">
+          <h3 class="mb-3">
+            Predictive Maintenance: The Future of Fleet Uptime
+          </h3>
+
+          <div class="blog-content">
+            <p>
+              Predictive maintenance has become one of the most transformative
+              advancements in fleet management. It uses real-time vehicle data
+              to detect issues before they become failures.
+            </p>
+
+            <p>
+              Unplanned breakdowns affect delivery timelines, increase costs,
+              and disrupt operations. Predictive systems monitor engine
+              temperature, battery health, tire pressure, and more to alert
+              fleets early.
+            </p>
+
+            <h4>Predictive Maintenance: The Future of Fleet Uptime</h4>
+
+            <p>
+              Instead of fixed schedules, predictive maintenance evaluates
+              hundreds of parameters in real time.
+            </p>
+
+            <blockquote>
+              <p>
+                “Predictive maintenance unlocks continuous uptime and lowers
+                operational costs.”
+              </p>
+            </blockquote>
+
+            <ul>
+              <li>Early detection of wear</li>
+              <li>Reduced maintenance costs</li>
+              <li>Less downtime</li>
+              <li>Longer vehicle lifespan</li>
+              <li>Safer fleet performance</li>
+            </ul>
+
+            <p>
+              AI-based diagnostics and automated alerts help fleets stay
+              reliable and efficient.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simplebar JS -->
+    <script src="assets/plugins/simplebar/simplebar.min.js"></script>
+
+    <!-- ApexChart JS -->
+    <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+    <script src="assets/plugins/apexchart/chart-data.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/script.js"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

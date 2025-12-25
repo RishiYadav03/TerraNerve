@@ -1,0 +1,117 @@
+/* Executive, white & bright — premium layout */
+:root{
+  --white: #ffffff;
+  --ink: #0b1720;
+  --muted: #6b7280;
+  --soft: #f6f8fb;
+  --accent: #0d6efd; /* corporate blue */
+  --panel-shadow: rgba(9,30,66,0.06);
+  --max-width: 1200px;
+}
+
+/* Base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+  background: var(--white);
+  color: var(--ink);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  margin:0;
+}
+
+/* NAV */
+.navbar{
+  background:transparent;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+.brand-mark{
+  width:36px;height:36px;border-radius:8px;margin-right:.6rem;
+  background: linear-gradient(135deg,var(--accent), #1e90ff);
+  box-shadow: 0 10px 30px rgba(13,110,253,0.12);
+}
+.brand-name{ font-weight:700; color:var(--ink); letter-spacing:0.2px; }
+
+/* HERO */
+.hero-section{
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  padding-top:5.5rem;
+  padding-bottom:3.5rem;
+}
+.hero-inner{ max-width: var(--max-width); margin:0 auto; }
+.hero-title{ font-size:3rem; line-height:1.02; font-weight:800; margin:0 0 .6rem; }
+.hero-sub{ color: rgba(11,23,32,0.75); font-size:1.06rem; max-width:56ch; }
+.hero-quick li{ margin-top:.5rem; color:var(--muted); font-size:.95rem; }
+
+/* Hero media */
+.hero-media{ display:flex; justify-content:center; align-items:center; }
+.device-photo{
+  width:100%; height:360px; object-fit:cover; border-radius:14px;
+  box-shadow: 0 30px 70px rgba(9,30,66,0.08);
+}
+.media-caption{
+  margin-top:.8rem; background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));
+  padding:10px 12px; border-radius:10px; box-shadow:0 6px 20px rgba(9,30,66,0.04);
+}
+.caption-title{ font-weight:700 }
+.caption-sub{ font-size:.9rem; color:var(--muted) }
+
+/* SECTIONS */
+.section-light{ padding:4rem 0; background:var(--white); }
+.section-showcase{ padding:0; }
+.section-showcase .showcase-image{
+  width:100%; height:520px; object-fit:cover;
+  box-shadow: 0 40px 100px rgba(9,30,66,0.06);
+}
+
+/* feature cards */
+.feature-card{
+  display:flex; gap:1rem; align-items:flex-start; background:var(--white); border-radius:10px;
+  border:1px solid rgba(9,30,66,0.03); box-shadow: 0 12px 32px var(--panel-shadow);
+}
+.feature-icon{
+  width:56px; height:56px; display:flex; align-items:center; justify-content:center;
+  background: linear-gradient(180deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02));
+  color:var(--accent); border-radius:12px; font-size:1.25rem;
+}
+
+/* TRUST / logos */
+.brand-row{ display:flex; gap:2rem; flex-wrap:wrap; justify-content:center; align-items:center; padding:1rem 0; }
+.brand-logo{ opacity:.85; filter:grayscale(1); width:140px; height:40px; object-fit:contain; }
+
+/* STATS */
+.section-stats{ padding:3.25rem 0; background:var(--soft); }
+.stat-card{ background:#fff; border-radius:10px; box-shadow:0 18px 48px rgba(9,30,66,0.04); }
+.stat-val{ font-size:1.9rem; font-weight:700; color:var(--ink); }
+
+/* CTA */
+.section-cta{ padding:2.5rem 0; }
+.cta-card{ background:#fff; border-radius:12px; box-shadow: 0 18px 48px rgba(9,30,66,0.04); }
+
+/* FOOTER */
+.site-footer{ background:transparent; border-top:1px solid rgba(9,30,66,0.04); }
+
+/* Utilities */
+.muted{ color:var(--muted) }
+.max-60ch{ max-width:60ch; }
+
+/* Responsive */
+@media (max-width: 1200px){
+  .hero-title{ font-size:2.5rem; }
+  .showcase-image{ height:420px; }
+}
+@media (max-width: 991px){
+  .hero-title{ font-size:2rem; }
+  .device-photo{ height:300px; }
+  .section-showcase .showcase-image{ height:340px; }
+}
+@media (max-width: 575px){
+  .hero-title{ font-size:1.45rem; }
+  .device-photo{ height:220px; border-radius:10px; }
+  .section-showcase .showcase-image{ height:220px; }
+  .brand-row img{ width:120px; height:34px; }
+  .hero-inner{ padding:0 1rem; }
+  .feature-card{ padding:1rem }
+}

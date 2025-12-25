@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dashboard | TerraNerve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="TerraNerve" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+    <!-- Apple Icon -->
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+
+    <!-- Theme Config Js -->
+    <script
+      src="assets/js/theme-script.js"
+      type="819c1d516d35307901584c0b-text/javascript"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Tabler Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/tabler-icons/tabler-icons.min.css"
+    />
+
+    <!-- Simplebar CSS -->
+    <link rel="stylesheet" href="assets/plugins/simplebar/simplebar.min.css" />
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" id="app-style" />
+  </head>
+
+  <body>
+    <!-- Begin Wrapper -->
+    <div class="main-wrapper">
+      <!-- Topbar Start -->
+      <header class="navbar-header">
+        <div class="topbar-menu">
+          <div class="d-flex align-items-center gap-2">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+              <!-- Logo Normal -->
+              <span class="logo-light">
+                <span class="logo-lg"
+                  ><img src="assets/img/logo.png" alt="logo"
+                /></span>
+                <!-- <span class="logo-sm"><img src="assets/img/logo.png" alt="small logo"></span> -->
+              </span>
+            </a>
+
+            <!-- Sidebar Toggle Button -->
+            <button class="sidenav-toggle-btn btn border-0 p-0" id="toggle_btn">
+              <i class="ti ti-menu-4 fs-24"></i>
+            </button>
+
+            <!-- Sidebar Mobile Button -->
+            <a id="mobile_btn" class="mobile-btn" href="#sidebar">
+              <i class="ti ti-menu-deep fs-24"></i>
+            </a>
+          </div>
+
+          <div class="d-flex align-items-center gap-1">
+            <!-- Notification Dropdown -->
+            <div class="header-item"></div>
+
+            <!-- User Dropdown -->
+            <div
+              class="dropdown profile-dropdown d-flex align-items-center justify-content-center"
+            >
+              <a
+                class="topbar-link dropdown-toggle drop-arrow-none"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-offset="0,22"
+                aria-haspopup="false"
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/img/profiles/avatar-01.jpg"
+                  width="24"
+                  class="rounded-circle d-flex"
+                  alt="user-image"
+                />
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg p-3">
+                <div
+                  class="d-flex align-items-center justify-content-between bg-light rounded mb-3 p-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="assets/img/profiles/avatar-01.jpg"
+                      class="rounded-circle"
+                      width="42"
+                      height="42"
+                      alt=""
+                    />
+                    <div class="ms-2">
+                      <h5 class="mb-1 fs-14">Admin</h5>
+                      <span class="d-block fs-13">TerraNerve</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item-->
+                <a href="profile.html" class="dropdown-item">
+                  <i class="ti ti-user me-1 fs-17 align-middle"></i>
+                  <span class="align-middle">Profile Settings</span>
+                </a>
+                <!-- Item-->
+                <a href="./login/login.html" class="dropdown-item border-top">
+                  <i
+                    class="ti ti-logout me-1 fs-17 align-middle text-danger"
+                  ></i>
+                  <span class="align-middle text-danger">Sign Out</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Topbar End -->
+
+      <!-- Sidenav Menu Start -->
+      <div class="sidebar" id="sidebar">
+        <!-- Start Logo -->
+        <div class="sidebar-logo">
+          <!-- Logo Normal -->
+          <a href="index.html" class="logo logo-normal">
+            <img src="assets/img/logo.png" alt="Logo" style="width: 100%" />
+          </a>
+          <!-- Sidebar Menu Close -->
+          <button class="sidebar-close">
+            <i class="ti ti-x align-middle"></i>
+          </button>
+        </div>
+        <!-- End Logo -->
+
+        <!--- Sidenav Menu -->
+        <div class="sidebar-inner" data-simplebar>
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <!-- MAIN -->
+              <li class="menu-title"><span>Main</span></li>
+
+              <li>
+                <a href="index.html">
+                  <i class="ti ti-layout-grid-add"></i><span>Dashboard</span>
+                </a>
+              </li>
+
+              <!-- PRODUCT MANAGEMENT -->
+              <li class="menu-title" class="active"><span>Products</span></li>
+
+              <li>
+                <a href="products.html" class="active">
+                  <i class="ti ti-box"></i><span>All Products</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="add-product.html">
+                  <i class="ti ti-file-pencil"></i><span>Add Product</span>
+                </a>
+              </li>
+
+              <!-- TBlogs -->
+              <li class="menu-title"><span>Blogs</span></li>
+
+              <li>
+                <a href="blog.html">
+                  <i class="ti ti-users-group"></i><span>Blog List</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="add-blog.html">
+                  <i class="ti ti-file-pencil"></i><span>Add Blog</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="blog-category.html">
+                  <i class="ti ti-category"></i><span>Blog Category</span>
+                </a>
+              </li>
+
+              <!-- EXTRA PAGES -->
+              <li class="menu-title" class="action"><span>Pages</span></li>
+
+              <li>
+                <a href="profile.html">
+                  <i class="ti ti-id"></i><span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="./login/forget-password.html">
+                  <i class="ti ti-lock"></i><span>Forget Password</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Sidenav Menu End -->
+
+      <!-- ========================
+			Start Page Content
+		========================= -->
+
+      <div class="page-wrapper">
+        <!-- Start Content -->
+        <div class="content pb-0">
+          <!-- Page Header -->
+          <div
+            class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+          >
+            <div class="flex-grow-1">
+              <h4 class="mb-0">All Product</h4>
+            </div>
+            <div class="text-end">
+              <ol class="breadcrumb m-0 py-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  All Product
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- End Page Header -->
+
+          <!-- start row -->
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card border bg-white p-4">
+                <!-- Product Header -->
+                <div class="d-flex align-items-start">
+                  <div class="me-4">
+                    <img
+                      src="./assets/img/images/scheduling-alarms-reminders-with-smart-time-management.avif"
+                      alt="Smart Reminder & Scheduling"
+                      class="img-fluid rounded"
+                      style="max-width: 260px"
+                    />
+                  </div>
+
+                  <div>
+                    <h2 class="fw-bold mb-1">Smart Reminder & Scheduling</h2>
+                    <p class="text-muted fs-6 mb-3">
+                      Never miss a task. Never lose a deadline.
+                    </p>
+
+                    <!-- Status & Added On -->
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <span class="badge badge-soft-success fs-14"
+                        >Published</span
+                      >
+                      <span class="text-secondary"
+                        >Added On: <strong>12 Jan 2025</strong></span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- Product Features -->
+                <h5 class="fw-semibold mb-3">Key Features</h5>
+                <ul class="list-unstyled fs-15">
+                  <li class="mb-2">
+                    • <strong>Unified Task Visibility</strong> — View daily,
+                    weekly, and monthly workloads at a glance.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>Intelligent Calendar Layout</strong> — A timeline
+                    that highlights priorities and deadlines.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>Rich Reminder Cards</strong> — Add context, set
+                    frequency, and define ownership.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>Audit-Ready History</strong> — Every change is
+                    timestamped for transparency.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>Collaborative Assignments</strong> — Assign tasks
+                    across users with aligned workflows.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>Timezone-Smart Alerts</strong> — Notifications
+                    adapt automatically to user regions.
+                  </li>
+                </ul>
+              </div>
+              <div class="card border bg-white p-4">
+                <!-- Product Header -->
+                <div class="d-flex align-items-start">
+                  <div class="me-4">
+                    <img
+                      src="./assets/img/images/Dashboard (11).png"
+                      alt="GPS Tracking"
+                      class="img-fluid rounded"
+                      style="max-width: 260px"
+                    />
+                  </div>
+
+                  <div>
+                    <h2 class="fw-bold mb-1">GPS Tracking</h2>
+                    <p class="text-muted fs-6 mb-3">
+                      Track every vehicle, asset, and movement with pinpoint
+                      accuracy.
+                    </p>
+
+                    <!-- Status & Added On -->
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                      <span class="badge badge-soft-success fs-14"
+                        >Published</span
+                      >
+                      <span class="text-secondary"
+                        >Added On: <strong>02 Mar 2025</strong></span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- Product Features -->
+                <h5 class="fw-semibold mb-3">Key Features</h5>
+                <ul class="list-unstyled fs-15">
+                  <li class="mb-2">
+                    • <strong>Live Location Updates</strong> — Real-time
+                    visibility across fleets and field assets.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>Smart Route Insights</strong> — Optimize travel
+                    time and reduce fuel costs through analytic insights.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>Movement History Playback</strong> — Review past
+                    activity with precision timelines.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>Geofencing Alerts</strong> — Automatic
+                    notifications for entry, exit, and unauthorized movement.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>Detailed Activity Reporting</strong> — Generate
+                    operational reports for better decision-making.
+                  </li>
+                  <li class="mb-2">
+                    • <strong>High Reliability & Precision</strong> — Built for
+                    stable, continuous, and accurate tracking.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- end card -->
+            </div>
+            <!-- end col -->
+          </div>
+        </div>
+        <!-- End Content -->
+
+        <!-- Start Footer -->
+        <footer class="footer text-center">
+          <p class="mb-0 text-dark">
+            Copyright &copy; TerraNerve | Designed by
+            <a href="#">Arizona Mediaz</a>
+          </p>
+        </footer>
+        <!-- End Footer -->
+      </div>
+
+      <!-- ========================
+			End Page Content
+		========================= -->
+    </div>
+    <!-- End Wrapper -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simplebar JS -->
+    <script src="assets/plugins/simplebar/simplebar.min.js"></script>
+
+    <!-- ApexChart JS -->
+    <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+    <script src="assets/plugins/apexchart/chart-data.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/script.js"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

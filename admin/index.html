@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dashboard | TerraNerve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="TerraNerve" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+    <!-- Apple Icon -->
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+
+    <!-- Theme Config Js -->
+    <script
+      src="assets/js/theme-script.js"
+      type="819c1d516d35307901584c0b-text/javascript"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Tabler Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/tabler-icons/tabler-icons.min.css"
+    />
+
+    <!-- Simplebar CSS -->
+    <link rel="stylesheet" href="assets/plugins/simplebar/simplebar.min.css" />
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" id="app-style" />
+  </head>
+
+  <body>
+    <!-- Begin Wrapper -->
+    <div class="main-wrapper">
+      <!-- Topbar Start -->
+      <header class="navbar-header">
+        <div class="topbar-menu">
+          <div class="d-flex align-items-center gap-2">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+              <!-- Logo Normal -->
+              <span class="logo-light">
+                <span class="logo-lg"
+                  ><img src="assets/img/logo.png" alt="logo"
+                /></span>
+                <!-- <span class="logo-sm"><img src="assets/img/logo.png" alt="small logo"></span> -->
+              </span>
+            </a>
+
+            <!-- Sidebar Toggle Button -->
+            <button class="sidenav-toggle-btn btn border-0 p-0" id="toggle_btn">
+              <i class="ti ti-menu-4 fs-24"></i>
+            </button>
+
+            <!-- Sidebar Mobile Button -->
+            <a id="mobile_btn" class="mobile-btn" href="#sidebar">
+              <i class="ti ti-menu-deep fs-24"></i>
+            </a>
+          </div>
+
+          <div class="d-flex align-items-center gap-1">
+            <!-- Notification Dropdown -->
+            <div class="header-item"></div>
+
+            <!-- User Dropdown -->
+            <div
+              class="dropdown profile-dropdown d-flex align-items-center justify-content-center"
+            >
+              <a
+                class="topbar-link dropdown-toggle drop-arrow-none"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-offset="0,22"
+                aria-haspopup="false"
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/img/profiles/avatar-01.jpg"
+                  width="24"
+                  class="rounded-circle d-flex"
+                  alt="user-image"
+                />
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg p-3">
+                <div
+                  class="d-flex align-items-center justify-content-between bg-light rounded mb-3 p-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="assets/img/profiles/avatar-01.jpg"
+                      class="rounded-circle"
+                      width="42"
+                      height="42"
+                      alt=""
+                    />
+                    <div class="ms-2">
+                      <h5 class="mb-1 fs-14">Admin</h5>
+                      <span class="d-block fs-13">TerraNerve</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item-->
+                <a href="profile.html" class="dropdown-item">
+                  <i class="ti ti-user me-1 fs-17 align-middle"></i>
+                  <span class="align-middle">Profile Settings</span>
+                </a>
+                <!-- Item-->
+                <a href="./login/login.html" class="dropdown-item border-top">
+                  <i
+                    class="ti ti-logout me-1 fs-17 align-middle text-danger"
+                  ></i>
+                  <span class="align-middle text-danger">Sign Out</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Topbar End -->
+
+      <!-- Sidenav Menu Start -->
+      <div class="sidebar" id="sidebar">
+        <!-- Start Logo -->
+        <div class="sidebar-logo">
+          <!-- Logo Normal -->
+          <a href="index.html" class="logo logo-normal">
+            <img src="assets/img/logo.png" alt="Logo" style="width: 100%" />
+          </a>
+          <!-- Sidebar Menu Close -->
+          <button class="sidebar-close">
+            <i class="ti ti-x align-middle"></i>
+          </button>
+        </div>
+        <!-- End Logo -->
+
+        <!--- Sidenav Menu -->
+        <div class="sidebar-inner" data-simplebar>
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <!-- MAIN -->
+              <li class="menu-title"><span>Main</span></li>
+
+              <li>
+                <a href="index.html" class="active">
+                  <i class="ti ti-layout-grid-add"></i><span>Dashboard</span>
+                </a>
+              </li>
+
+              <!-- PRODUCT MANAGEMENT -->
+              <li class="menu-title"><span>Products</span></li>
+
+              <li>
+                <a href="products.html">
+                  <i class="ti ti-box"></i><span>All Products</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="add-product.html">
+                  <i class="ti ti-file-pencil"></i><span>Add Product</span>
+                </a>
+              </li>
+
+              <!-- TBlogs -->
+              <li class="menu-title"><span>Blogs</span></li>
+
+              <li>
+                <a href="blog.html">
+                  <i class="ti ti-users-group"></i><span>Blog List</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="add-blog.html">
+                  <i class="ti ti-file-pencil"></i><span>Add Blog</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="blog-category.html">
+                  <i class="ti ti-category"></i><span>Blog Category</span>
+                </a>
+              </li>
+
+              <!-- EXTRA PAGES -->
+              <li class="menu-title" class="action"><span>Pages</span></li>
+
+              <li>
+                <a href="profile.html">
+                  <i class="ti ti-id"></i><span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="./login/forget-password.html">
+                  <i class="ti ti-lock"></i><span>Forget Password</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Sidenav Menu End -->
+
+      <!-- ========================
+			Start Page Content
+		========================= -->
+
+      <div class="page-wrapper">
+        <!-- Start Content -->
+        <div class="content pb-0">
+          <!-- Page Header -->
+          <div
+            class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+          >
+            <div class="flex-grow-1">
+              <h4 class="mb-0">Admin Dashboard</h4>
+            </div>
+            <div class="text-end">
+              <ol class="breadcrumb m-0 py-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Admin Dashboard
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- End Page Header -->
+
+          <!-- start row -->
+          <div class="row">
+            <!-- Total Products -->
+            <div class="col-xxl-3 col-xl-3 col-sm-6 col-12 d-flex">
+              <div class="card flex-fill">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div
+                      class="col d-flex align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span class="d-block mb-1">Total Products</span>
+                        <h4 class="mb-0">5</h4>
+                      </div>
+                      <div id="total-products-chart"></div>
+                    </div>
+                    <div
+                      class="mt-3 d-inline-flex align-items-center flex-wrap"
+                    >
+                      <span class="badge badge-pill bg-success me-2">
+                        <i class="ti ti-arrow-up-right me-1"></i>12%
+                      </span>
+                      <p class="mb-0">vs Last Week</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Published Products -->
+            <div class="col-xxl-3 col-xl-3 col-sm-6 col-12 d-flex">
+              <div class="card flex-fill">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div
+                      class="col d-flex align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span class="d-block mb-1">Published Products</span>
+                        <h4 class="mb-0">5</h4>
+                      </div>
+                      <div id="published-products-chart"></div>
+                    </div>
+                    <div
+                      class="mt-3 d-inline-flex align-items-center flex-wrap"
+                    >
+                      <span class="badge badge-pill bg-success me-2">
+                        <i class="ti ti-arrow-up-right me-1"></i>8%
+                      </span>
+                      <p class="mb-0">vs Last Week</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Approval -->
+            <div class="col-xxl-3 col-xl-3 col-sm-6 col-12 d-flex">
+              <div class="card flex-fill">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div
+                      class="col d-flex align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span class="d-block mb-1">Total Blogs</span>
+                        <h4 class="mb-0">3</h4>
+                      </div>
+                      <div id="pending-products-chart"></div>
+                    </div>
+                    <div
+                      class="mt-3 d-inline-flex align-items-center flex-wrap"
+                    >
+                      <span class="badge badge-pill bg-warning me-2">
+                        <i class="ti ti-alert-triangle me-1"></i>+5%
+                      </span>
+                      <p class="mb-0">vs Last Week</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Draft Products -->
+            <div class="col-xxl-3 col-xl-3 col-sm-6 col-12 d-flex">
+              <div class="card flex-fill">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div
+                      class="col d-flex align-items-center justify-content-between"
+                    >
+                      <div>
+                        <span class="d-block mb-1">Draft Blog</span>
+                        <h4 class="mb-0">3</h4>
+                      </div>
+                      <div id="draft-products-chart"></div>
+                    </div>
+                    <div
+                      class="mt-3 d-inline-flex align-items-center flex-wrap"
+                    >
+                      <span class="badge badge-pill bg-info me-2">
+                        <i class="ti ti-arrow-right me-1"></i>Stable
+                      </span>
+                      <p class="mb-0">No major changes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end row -->
+
+          <!-- start row -->
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card shadow-none w-100">
+                <div
+                  class="card-header d-flex align-items-center justify-content-between gap-3 flex-wrap"
+                >
+                  <h5 class="mb-0">Products</h5>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table m-0 table-nowrap bg-white border">
+                    <thead>
+                      <tr>
+                        <th>Product</th>
+                        <th>Added On</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <!-- Product 1 -->
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="avatar avatar-rounded">
+                              <img
+                                src="./assets/img/images/scheduling-alarms-reminders-with-smart-time-management.avif"
+                                class="img-fluid"
+                                alt="Smart Reminder & Scheduling"
+                              />
+                            </a>
+                            <div class="ms-2">
+                              <h6 class="fs-14 fw-medium mb-0">
+                                <a href="#">Smart Reminder & Scheduling</a>
+                              </h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>12 Jan 2025</td>
+                        <td>
+                          <span class="badge badge-soft-success"
+                            >Published</span
+                          >
+                        </td>
+                      </tr>
+
+                      <!-- Product 2 -->
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="avatar avatar-rounded">
+                              <img
+                                src="./assets/img/images/Dashboard (11).png"
+                                class="img-fluid"
+                                alt="GPS Tracking"
+                              />
+                            </a>
+                            <div class="ms-2">
+                              <h6 class="fs-14 fw-medium mb-0">
+                                <a href="#">GPS Tracking</a>
+                              </h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>05 Feb 2025</td>
+                        <td>
+                          <span class="badge badge-soft-success"
+                            >Published</span
+                          >
+                        </td>
+                      </tr>
+
+                      <!-- Product 3 -->
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="avatar avatar-rounded">
+                              <img
+                                src="./assets/img/images/Internet of Things_IoT_IIoT_device management.jpeg"
+                                class="img-fluid"
+                                alt="IoT Connectivity & Device Management"
+                              />
+                            </a>
+                            <div class="ms-2">
+                              <h6 class="fs-14 fw-medium mb-0">
+                                <a href="#">IoT Connectivity & Device Management</a>
+                              </h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>23 Mar 2025</td>
+                        <td>
+                          <span class="badge badge-soft-warning">Pending</span>
+                        </td>
+                      </tr>
+
+                      <!-- Product 4 -->
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="avatar avatar-rounded">
+                              <img
+                                src="./assets/img/images/CRM-101-Customer-Relationship-Management.jpeg"
+                                class="img-fluid"
+                                alt="CRM – Customer Relationship Management"
+                              />
+                            </a>
+                            <div class="ms-2">
+                              <h6 class="fs-14 fw-medium mb-0">
+                                <a href="#">CRM – Customer Relationship Management</a>
+                              </h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>14 Apr 2025</td>
+                        <td>
+                          <span class="badge badge-soft-danger">Draft</span>
+                        </td>
+                      </tr>
+
+                      <!-- Product 5 -->
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <a href="#" class="avatar avatar-rounded">
+                              <img
+                                src="./assets/img/images/human-resources-concept-with-hand.jpg"
+                                class="img-fluid"
+                                alt="HRMS – Human Resource Management System"
+                              />
+                            </a>
+                            <div class="ms-2">
+                              <h6 class="fs-14 fw-medium mb-0">
+                                <a href="#">HRMS – Human Resource Management System</a>
+                              </h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>02 Mar 2025</td>
+                        <td>
+                          <span class="badge badge-soft-success"
+                            >Published</span
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+            <!-- end col -->
+          </div>
+        </div>
+        <!-- End Content -->
+
+        <!-- Start Footer -->
+        <footer class="footer text-center">
+          <p class="mb-0 text-dark">
+            Copyright &copy; TerraNerve | Designed by
+            <a href="#">Arizona Mediaz</a>
+          </p>
+        </footer>
+        <!-- End Footer -->
+      </div>
+
+      <!-- ========================
+			End Page Content
+		========================= -->
+    </div>
+    <!-- End Wrapper -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simplebar JS -->
+    <script src="assets/plugins/simplebar/simplebar.min.js"></script>
+
+    <!-- ApexChart JS -->
+    <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+    <script src="assets/plugins/apexchart/chart-data.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/script.js"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
